@@ -1,5 +1,21 @@
 
 
+
+
+
+
+Шпаргалка по Git от GitHub
+https://training.github.com/downloads/ru/github-git-cheat-sheet/
+
+
+Git How To — это интерактивный тур, который познакомит вас с основами Git. 
+Тур создан с пониманием того, что лучший способ научиться использовать Git — попробовать его своими руками.
+https://githowto.com/ru
+
+
+
+
+
 https://discord.com
 Mika73
 7727019@gmail.com
