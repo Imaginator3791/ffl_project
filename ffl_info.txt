@@ -1,7 +1,15 @@
 
 
+https://doka.guide/
+технологии  HTML  / СSS  /  JavaScript  / Инструменты 
 
 
+полезная утилита для оптимизации картинок для web
+https://tinypng.com/
+
+
+проверять теги и т.п. на поддержку браузеров
+https://caniuse.com/
 
 
 Шпаргалка по Git от GitHub
