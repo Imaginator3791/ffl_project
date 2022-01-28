@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Урок 3. CSS-Стили. Фрилансер по жизни 2022</title>
+	</head>
+
+	<body>
+		<header class="header"></header>
+
+		<main class="main"></main>
+		<h1>Знакомство с CSS. Варианты и способы подключения. Приоритетность исполнения.</h1>
+		<div class="class-connect">
+			<h2>Варианты подключения стилей на странице. Приоритет исполнения.</h2>
+			<p>Существует три вида подключения стилей.</p>
+
+			<p>1) <span class="span-upper">Подключаемый файл стилей</span>. Самый распространенный способ подключения стилей! В блоке HEAD прописывается ссылка - &lt;link rel="stylesheet" href="css/style.css" &gt;</p>
+			<p></p>
+
+			<p>2) <span class="span-upper">С использованием атрибутов стилей (инлайново)</span>. Используется прямо на странице в коде. Стили указанные в данном варианте перебивают стили указанные ранее, имеют Высший приоритет.<br> Синтаксис пишется следующим образом:<br>
+				&lt;p style=color: red; font-size:14px; &gt;<br>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vel dolorem! Obcaecati earum molestias dolorem non! &lt;/p&gt;
+			</p>
+			<p></p>
+
+			<p>3) <span class="span-upper"> &lt;style&gt;&lt;/style&gt; </span> В блоке HEAD, с использованием тега &lt;style&gt;...&lt;/style&gt;. Например:<br>&lt;style&gt;<br>
+				p {<br>
+				color: red;<br>
+				font-size: 14px;<br>
+				}<br>
+				&lt;/style&gt; </p>
+		</div>
+		<hr>
+		<h2> Классы. Структура, спецификация, описание.</h2>
+		<div class=about-classes>
+			<p>Классы используются в подключаемом файле стилей style.css. Можно использовать несколько классов в одном элементе. При этом между селекторами классов нужно ставит обязательно пробел.</p>
+
+			<h3>Имя класса:</h3>
+			<ul>
+				<li>Пишется латинскими буквами.</li>
+				<li>Пишется маленькими буквами.</li>
+				<li>Если имя класса состоит из двух и более слов, между ними ставится дефис big-block</li>
+				<li>Рекомендуется называть классы по содержимому.</li>
+			</ul>
+			<h3>Анатомия селектора:</h3>
+			<ul>
+				<li>Селектор начинается с точки - .text</li>
+				<li>Обрамляется фигурными скобками.</li>
+				<li>Между фигурными скобками пишутся css-параметры.</li>
+				<li>css-параметрыотделяются точкой с запятой.</li>
+			</ul>
+			<h3>Анатомия css-параметра:</h3>
+			<ul>
+				<li>Содержит к себе css-свойства.</li>
+				<li>css-свойство:значение; - свойство отделено от значения двоеточием, в конце ставится точка с запятой!</li>
+			</ul>
+			<p>Например:<br>
+				.text {<br>
+				color: red;<br>
+				font-size: 14px;<br>
+				} </p>
+
+		</div>
+
+		<h2> Селекторы. Типы. Приоритетность.</h2>
+		<div class="about-selector">
+
+
+		</div>
+
+		<hr>
+		<footer class="footer">
+
+			<p>Это нижняя часть страницы. Подвал<br><br><br>
+				<a href="#">К началу страницы (Наверх)</a><br><br><br>
+				&#169; 2022. Михаил Уланов
+			</p>
+		</footer>
+
+	</body>
+
+</html>
