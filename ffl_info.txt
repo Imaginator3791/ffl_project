@@ -1,9 +1,21 @@
 
 
 
+https://jigsaw.w3.org/css-validator/
+CSS ВАЛИДАТОР
 
-https://convertio.co/ru/psd-fig/
-Конвертер из PSD в Figma
+https://youtu.be/sohdv21BVNI
+Адаптивная верстка сайта с нуля для начинающих. Объяснение действий. HTML CSS
+20220128
+
+
+https://youtu.be/YEJT7y-INps
+Знакомство с синтаксисом CSS
+20220127
+
+Получить точную копию моего VS Code со всеми плагинами и настройками, 
+можно по ключу a914e661e3c8c3314910641025bfc6d8, для плагина Settings Sync
+
 
 https://doka.guide/
 технологии  HTML  / СSS  /  JavaScript  / Инструменты 
@@ -24,6 +36,7 @@ https://training.github.com/downloads/ru/github-git-cheat-sheet/
 Git How To — это интерактивный тур, который познакомит вас с основами Git. 
 Тур создан с пониманием того, что лучший способ научиться использовать Git — попробовать его своими руками.
 https://githowto.com/ru
+
 
 
 
