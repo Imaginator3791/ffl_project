@@ -2,3 +2,54 @@
 	text-transform: uppercase;
 	font-weight: bold;
 }
+
+.text-select {
+	font-weight: 700;
+}
+
+span {
+	color: green;
+}
+
+.select2 {
+	color: blue;
+	font-size: 18px;
+}
+
+#select1 {
+	color: purple;
+	font-size: 16px;
+}
+
+div.text {
+	color: indigo;
+}
+
+.text {
+	color: green;
+}
+
+.text1.paragraph {
+	color: blue;
+}
+
+.text1 {
+	color: green;
+}
+
+span {
+	color: green;
+}
+
+p span {
+	color: red;
+}
+
+.about__text,
+.block__text {
+	color: hotpink;
+}
+
+[class*="-text"] {
+	color: red;
+}

@@ -1,6 +1,16 @@
 
 
 
+https://transfonter.org/
+Конвертер шрифторв
+
+https://webfonts.pro/
+https://rufonts.pro/ 
+Сайты со шрифтами
+
+https://fonts.google.com/
+Шрифты
+
 https://jigsaw.w3.org/css-validator/
 CSS ВАЛИДАТОР
 
