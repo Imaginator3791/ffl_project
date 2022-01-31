@@ -1,6 +1,19 @@
 
 
 
+<----- ВАЛИДАТОРЫ ----->
+https://validator.w3.org/
+HTML валидатор
+
+https://jigsaw.w3.org/css-validator/
+CSS валидатор
+
+<----- ВАЛИДАТОРЫ ----->
+
+
+
+<----- ШРИФТЫ ----->
+
 https://transfonter.org/
 Конвертер шрифторв
 
@@ -11,8 +24,13 @@ https://rufonts.pro/
 https://fonts.google.com/
 Шрифты
 
-https://jigsaw.w3.org/css-validator/
-CSS ВАЛИДАТОР
+<----- ШРИФТЫ ----->
+
+
+
+https://youtu.be/6S5Zw2WuyFE
+БЫСТРАЯ ВЕРСТКА САЙТА. Как увеличить скорость в веб-разработке? Почему высокая скорость так важна?
+
 
 https://youtu.be/sohdv21BVNI
 Адаптивная верстка сайта с нуля для начинающих. Объяснение действий. HTML CSS
