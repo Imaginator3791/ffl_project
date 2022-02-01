@@ -1,3 +1,6 @@
+/* Вариант подключения обнуляющих стилей через импорт  */
+/* @import "null.css"; */
+
 .span-upper {
 	color: red;
 }
@@ -14,6 +17,14 @@ span {
 	color: purple;
 }
 
+#span16 {
+	color: purple;
+}
+
+.span18 {
+	color: blue;
+}
+
 div.text {
 	color: indigo;
 }
@@ -27,10 +38,6 @@ div.text {
 }
 
 .text1 {
-	color: green;
-}
-
-span {
 	color: green;
 }
 
