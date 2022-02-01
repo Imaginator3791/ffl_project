@@ -1,0 +1,87 @@
+/* Вариант подключения обнуляющих стилей через импорт  */
+/* @import "null.css"; */
+
+.span-upper {
+	color: red;
+}
+
+span {
+	color: green;
+}
+
+.select2 {
+	color: blue;
+}
+
+#select1 {
+	color: purple;
+}
+
+#span16 {
+	color: purple;
+}
+
+.span18 {
+	color: blue;
+}
+
+div.text {
+	color: indigo;
+}
+
+.text {
+	color: green;
+}
+
+.text1.paragraph {
+	color: blue;
+}
+
+.text1 {
+	color: green;
+}
+
+p span {
+	color: red;
+}
+
+.about__text,
+.block__text {
+	color: hotpink;
+}
+
+[class*="-text"] {
+	color: red;
+}
+
+.section p {
+	color: red;
+}
+
+.section > p {
+	color: green;
+}
+
+.section p {
+	color: red;
+}
+
+.section > p {
+	color: green;
+}
+
+.section2 p {
+	color: red;
+}
+
+.section2__text + p {
+	color: green;
+}
+
+.section3 p {
+	color: red;
+}
+
+.section3__text ~ p {
+	color: green;
+}
