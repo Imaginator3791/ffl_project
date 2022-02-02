@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+[------- Подключение Шрифтов -------]
+
+При подключении шрифтов локально, они скачиваются в папку fonts или vendor/fonts
+прописываются в отдельный файл css (inter.css) и подключаются импортом  @import inter.css
+ 
+@import inter.css
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./Inter-Regular.woff2) format("woff2"),
+       url(./Inter-Regular.woff) format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./Inter-Bold.woff2) format("woff2"),
+       url(./Inter-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(./Inter-Black.woff2) format("woff2"),
+       url(./Inter-Black.woff) format("woff");
+}
+
+
+[------- Списки VS Code -------]
+
+Cочетание клавиш и очередность тиражирование пунктов списка <li> 
+Shift+Alt + стрелка вниз
+или
+ul>li*7
+или
+ul.list>li.item__list{пункт меню}*5
+
+[------- Списки VS Code -------]
+
+
+
+
+[------- ФИГМА -------]
+
+В Фигме важно установить плагин Font Fascia
+Главное меню - Plugins - Browse plugins in community
+В поиске указать Font Fascia
+Выбрать далее вкладку Plugins - Install
+
+При использовании на открытом макете - выбрать плагин Font Fascia, 
+откроется окошко где будет указано семейства шрифтов в макете  и их начертание
+
+Посмотреть расстояние между объектами
+- Навести, выделить объект, зажать Alt и на вести мышь на следующий объект.
+
+[------- ФИГМА -------]
