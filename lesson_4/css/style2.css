@@ -2,9 +2,8 @@
 /* &display=swap */
 /* @import "null.css"; */
 
-/* импорт шрифтов Lato с fonts.google.com */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"); */
+/* импорт шрифтов Roboto с fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 /* импорт шрифтов Balsamiq-Sans локально */
 @import url(../fonts/Balsamiq-Sans/balsamiq-sans.css);
@@ -19,14 +18,14 @@ body {
 }
 
 .title {
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 42px;
 	font-weight: 900;
 	line-height: 1.3;
 }
 
 .subtitle {
-	font-family: "Lato", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -46,7 +45,7 @@ body {
 }
 
 .text-first {
-	font-family: "Balsamiq Sans";
+	font-family: "Balsamiq Sans", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.8;
@@ -70,14 +69,14 @@ body {
 }
 
 .greenstyle {
-	font-family: "Balsamiq Sans";
+	font-family: "Balsamiq Sans", sans-serif;
 	font-size: 20px;
 	font-style: italic;
 	color: darkgreen;
 }
 
 .greenstyle-center {
-	font-family: "Balsamiq Sans";
+	font-family: "Balsamiq Sans", sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 24px;
