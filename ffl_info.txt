@@ -67,22 +67,3 @@ Git How To — это интерактивный тур, который позн
 https://githowto.com/ru
 
 
-
-
-
-
-https://discord.com
-Mika73
-7727019@gmail.com
-MYdiscord+0000
-
-
-
-Хостинг для домашек (также можно использоовать GitHubPages или свой хостинг):
-
-Сервер (хост)
-stocks01.ftp.tools
-Логин (пользователь)
-stocks01_w2022
-Пароль
-M3aVg8fsAK95
