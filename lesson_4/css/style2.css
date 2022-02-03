@@ -6,10 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
 /* импорт шрифтов Balsamiq-Sans локально */
-@import url(../fonts/Balsamiq-Sans/balsamiq-sans.css);
+@import url(../fonts/balsamiq-sans/balsamiq-sans.css);
 
 /* импорт шрифтов Balsamiq-Sans локально */
-@import url(../fonts/Inter/inter.css);
+@import url(../fonts/inter/inter.css);
 
 body {
 	font-family: "Inter", sans-serif;
