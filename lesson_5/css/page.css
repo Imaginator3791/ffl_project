@@ -1,0 +1,176 @@
+body {
+	font-family: "Cuprum", sans-serif;
+	font-size: 18px;
+	color: #180202;
+}
+
+.mark-text {
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.padding-style {
+	/* background-color: aquamarine; */
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.margin-style {
+	background-color: bisque;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.width-style {
+	/* background-color: darkslateblue; */
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: "YanoneKaffeesatz", sans-serif;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+
+.subtitle {
+	color: brown;
+}
+
+.text {
+	padding: 10px 0 10px 20px;
+}
+
+.connect {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.5;
+	padding: 0 0 10px 30px;
+}
+
+.li-style {
+	padding: 0 0 10px 40px;
+}
+
+/* ===== стили padding ===== */
+.p-vars {
+	margin-bottom: 20px;
+	background-color: chocolate;
+}
+.p-var-1 {
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 40px;
+	padding-left: 100px;
+}
+
+.p-var-2 {
+	padding: 50px;
+}
+
+.p-var-3 {
+	padding: 30px 20px;
+}
+
+.p-var-4 {
+	padding: 60px 150px 40px;
+}
+
+.p-var-5 {
+	padding: 30px 50px 40px 60px;
+}
+
+.p-picture {
+	padding: 100px;
+}
+
+/* ===== стили margin ===== */
+.m-vars {
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+.m-var-1 {
+	margin-top: 30px;
+	margin-right: 40px;
+	margin-bottom: 35px;
+	margin-left: 45px;
+}
+
+.m-var-2 {
+	margin: 80px;
+}
+
+.m-var-3 {
+	margin: 30px 20px;
+}
+
+.m-var-4 {
+	margin: 60px 150px 40px;
+}
+
+.m-var-5 {
+	margin: 30px 50px 40px 60px;
+}
+
+/* ===== width  height ===== */
+
+.block-w-1 {
+	width: 300px;
+	/* background-color: red; */
+	margin-bottom: 50px;
+}
+
+.block-w-1-2 {
+	width: 50%;
+	/* background-color: red; */
+	margin-bottom: 50px;
+}
+
+.block-w-2 {
+	max-width: 800px;
+	/* background-color: green; */
+	margin-bottom: 50px;
+}
+
+.block-w-2-2 {
+	max-width: 50%;
+	/* background-color: green; */
+	margin-bottom: 50px;
+}
+
+.block-w-3 {
+	min-width: 500px;
+	/* background-color: aquamarine; */
+	margin-bottom: 50px;
+}
+
+.block-w-3-2 {
+	min-width: 50%;
+	/* background-color: aquamarine; */
+	margin-bottom: 50px;
+}
+
+.block-h-1 {
+	height: 150px;
+	width: 500px;
+	background-color: aquamarine;
+	margin-bottom: 150px;
+}
+
+.block-h-2 {
+	max-height: 200px;
+	width: 400px;
+	background-color: aquamarine;
+	margin-bottom: 150px;
+}
+
+.block-h-3 {
+	min-height: 200px;
+	width: 400px;
+	background-color: aquamarine;
+	margin-bottom: 150px;
+}
