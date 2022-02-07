@@ -2,30 +2,92 @@ body {
 	font-family: "Cuprum", sans-serif;
 	font-size: 18px;
 	color: #180202;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/* ====== Вставлять всегда в стили ====== */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ====== Вставлять всегда в стили ====== */
+
+.header {
+	margin: 20px auto;
+}
+
+.footer {
+	margin: 20px auto;
+}
+
+.menu-pages {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.menu {
+	padding: 30px 0 70px 0;
+	text-align: center;
+	font-size: 0;
+}
+
+.menu-link {
+	display: inline-block;
+	/* background-color: darkkhaki; */
+	margin: 10px 30px;
+	text-transform: uppercase;
+	color: darkred;
+	font-size: 24px;
 }
 
 .mark-text {
 	font-size: 18px;
 	font-weight: 700;
 	text-decoration: underline;
+	color: darkred;
+}
+
+.block {
+	/* background-color: aqua; */
+	padding: 10%;
+}
+
+.picture {
+	/* background-color: darkkhaki; */
+	padding: 10%;
+}
+
+.description {
+	margin: 0 auto 40px;
 }
 
 .padding-style {
 	/* background-color: aquamarine; */
-	max-width: 1280px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 }
 
 .margin-style {
-	background-color: bisque;
-	max-width: 1280px;
-	margin: 0 auto;
+	/* background-color: bisque; */
+	margin: 0 auto 50px;
 }
 
 .width-style {
 	/* background-color: darkslateblue; */
-	max-width: 1280px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
+}
+
+.box-style {
+	/* background-color: darkslateblue; */
+	margin: 0 auto 50px;
+}
+
+.overfl-style {
+	margin: 0 auto 50px;
+}
+
+.display-style {
+	margin: 0 auto 50px;
 }
 
 .title {
@@ -34,6 +96,7 @@ body {
 	font-weight: 700;
 	line-height: 1.3;
 	text-transform: uppercase;
+	color: darkgreen;
 }
 
 .subtitle {
@@ -58,7 +121,7 @@ body {
 /* ===== стили padding ===== */
 .p-vars {
 	margin-bottom: 20px;
-	background-color: chocolate;
+	/* background-color: chocolate; */
 }
 .p-var-1 {
 	padding-top: 20px;
@@ -173,4 +236,38 @@ body {
 	width: 400px;
 	background-color: aquamarine;
 	margin-bottom: 150px;
+}
+
+/* ===== overflow ===== */
+
+.ovfl-1 {
+	overflow: visible;
+	max-height: 100px;
+	width: 300px;
+	margin: 0 0 200px 0;
+	background-color: aquamarine;
+}
+
+.ovfl-2 {
+	overflow: hidden;
+	max-height: 200px;
+	width: 400px;
+	margin: 0 0 30px 0;
+	background-color: aquamarine;
+}
+
+.ovfl-3 {
+	overflow: scroll;
+	max-height: 200px;
+	width: 400px;
+	margin: 0 0 30px 0;
+	background-color: aquamarine;
+}
+
+.ovfl-4 {
+	overflow: auto;
+	max-height: 200px;
+	width: 400px;
+	margin: 0 0 30px 0;
+	background-color: aquamarine;
 }
