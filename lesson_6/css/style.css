@@ -1,0 +1,6 @@
+/* &display=swap */
+/* Вариант подключения обнуляющих стилей через импорт */
+@import "null.css";
+@import "page.css";
+@import url("../fonts/cuprum/cuprum.css");
+@import url("../fonts/yanone-kaffeesatz/yanonekaffeesatz.css");
