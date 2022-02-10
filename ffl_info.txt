@@ -1,5 +1,8 @@
 
 
+https://cssgradient.io/
+Генератор градиентов 
+
 https://9elements.github.io/fancy-border-radius/
 Генератор border-radius
 
