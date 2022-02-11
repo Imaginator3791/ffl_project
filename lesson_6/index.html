@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- <link rel="stylesheet" href="css/null.css"> -->
-		<link rel="stylesheet" href="css/style.css">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" href="css/null.css"> -->
+	<link rel="stylesheet" href="css/style.css">
 
-		<title>Урок 6. Border. Border-Radius. Outline. Фрилансер по жизни 2022</title>
-	</head>
+	<title>Урок 6. Border. Border-Radius. Outline. Фрилансер по жизни 2022</title>
+</head>
 
-	<body class="body">
-		<!-- Обертка wrapper - это ширина и высота вьюпорта. Поэтому все блоки контента нужно помещать внутрь этой оболочки -->
-		<div class="wrapper">
-
-
-			<header>
-				<div class="header">
-					Верхняя часть страницы. Шапка
-				</div>
-				<nav class="menu">
-					<a class="menu-link" href="#les6_1">border</a>
-					<a class="menu-link" href="#les6_2">border-radius</a>
-					<a class="menu-link" href="#les6_3">outline</a>
-					<!-- <a class="menu-link" href="#les5_4">height</a>
+<body class="body">
+	<!-- Обертка wrapper - это ширина и высота вьюпорта. Поэтому все блоки контента нужно помещать внутрь этой оболочки -->
+	<div class="wrapper">
+		<header>
+			<div class="header">
+				Верхняя часть страницы. Шапка
+			</div>
+			<nav class="menu">
+				<a class="menu-link" href="#les6_1">border</a>
+				<a class="menu-link" href="#les6_2">border-radius</a>
+				<a class="menu-link" href="#les6_3">outline</a>
+				<a class="menu-link" href="#les6_4">фрагмент макета Figma</a>
+				<!-- <a class="menu-link" href="#les5_4">height</a>
 					<a class="menu-link" href="#les5_5">box-sizing</a>
 					<a class="menu-link" href="#les5_6">overflow</a>
 					<a class="menu-link" href="#les5_7">display</a> -->
-				</nav>
-			</header>
+			</nav>
+		</header>
 
-			<main class="content">
+		<main class="content">
+			<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАТЕРИАЛ ПО УРОКУ -->
+
+			<div class="lesson6-style">
 
 				<div class="border-style" id="les6_1">
 					<h2 class="title">Свойство блока - граница. border</h2>
 					<div class="description">
-						<p class="text">Свойство border отвечает за отрисовку видимой границы блока. Видимую границу блока называют рамкой.</p>
-						<p class="text">Для блочных объектов border ведет себя как padding, то есть толкает контент внутрь.</p>
-						<p class="text">Для блочно-строчных объектов (для картинок) border ведет себя как для блочных объектов.</p>
-						<p class="text">Для строчных объектов допускается использование border, например для достижения необходимого эффекта подчеркивания в тексте например.</p>
-						<p class="text">Общепринятым порядоком написания значений border считается следующий (главное разделять их пробелами) : ширина → стиль → цвет рамки.</p>
+						<p class="text">Свойство border отвечает за отрисовку видимой границы блока. Видимую границу блока
+							называют рамкой.</p>
+						<p class="text">Для блочных объектов border ведет себя как padding, то есть толкает контент внутрь.
+						</p>
+						<p class="text">Для блочно-строчных объектов (для картинок) border ведет себя как для блочных
+							объектов.
+						</p>
+						<p class="text">Для строчных объектов допускается использование border, например для достижения
+							необходимого эффекта подчеркивания в тексте например.</p>
+						<p class="text">Общепринятым порядоком написания значений border считается следующий (главное
+							разделять
+							их пробелами) : ширина → стиль → цвет рамки.</p>
 
 						<p class="text">selector {<br>
 							border: [border-width] [border-style] [border-color];<br>
@@ -48,26 +57,19 @@
 					</div>
 					<div class="border-width">
 						<p class="connect">Свойства сторон.</p>
-						<p class="text">Если значение толщины (width) border одинаково для всех сторон, то указывается одно значение - border: 1px.</p>
-						<p class="text">Если значение толщины (width) border разные для сторон блока, то каждое значение указывается отдельно.</p>
-						<p class="text">Если значение толщины (width) border для какой-то стороны не требуется, то пишется значение none.</p>
+						<p class="text">Если значение толщины (width) border одинаково для всех сторон, то указывается одно
+							значение - border: 1px.</p>
+						<p class="text">Если значение толщины (width) border разные для сторон блока, то каждое значение
+							указывается отдельно.</p>
+						<p class="text">Если значение толщины (width) border для какой-то стороны не требуется, то пишется
+							значение none.</p>
 					</div>
 					<div class="brd-w1">border: 1px — одно значение, толщина рамки со всех сторон одинаковая.</div>
 					<div class="brd-wt">border-top: ; — значение border сверху.</div>
 					<div class="brd-wr">border-right: ; — значение border справа</div>
 					<div class="brd-wb">border-bottom: ; — значение border снизу.</div>
 					<div class="brd-wl">border-left: ; — значение border слева.</div>
-					<div class="brd-wrb">border-right: ; border-bottom: ;  — значение border справа и снизу.</div>
-
-
-
-				
-
-					
-	
-	
-
-
+					<div class="brd-wrb">border-right: ; border-bottom: ; — значение border справа и снизу.</div>
 
 					<div class="border-style">
 						<p class="connect">Стиль рамки задаётся при помощи ключевых слов:</p>
@@ -75,314 +77,77 @@
 					<div class="brd-style-none">none — отключает рамку (значение по умолчанию).</div>
 					<div class="brd-style-dotted">dotted — рамка состоит из точек с пробелами между ними.</div>
 					<div class="brd-style-dashed">dashed — рамка состоит из коротких чёрточек с пробелами между ними.</div>
-					<div class="brd-style-double">double — рамка состоит из двух сплошных линий с небольшим нерегулируемым отступом между ними.</div>
-					<div class="brd-style-groove">groove — рамка объёмная, с тенями от источника света, находящегося в верхнем левом наружном углу.</div>
-					<div class="brd-style-ridge">ridge — рамка объёмная, с тенями от источника света, находящегося в нижнем правом внешнем углу.</div>
-					<div class="brd-style-inset">inset — рамка с тенями от источника света, находящегося в нижнем правом внутреннем углу.</div>
-					<div class="brd-style-outset">outset — рамка с тенями от источника света, находящегося в левом верхнем внутреннем углу.</div>
+					<div class="brd-style-double">double — рамка состоит из двух сплошных линий с небольшим нерегулируемым
+						отступом между ними.</div>
+					<div class="brd-style-groove">groove — рамка объёмная, с тенями от источника света, находящегося в
+						верхнем
+						левом наружном углу.</div>
+					<div class="brd-style-ridge">ridge — рамка объёмная, с тенями от источника света, находящегося в нижнем
+						правом внешнем углу.</div>
+					<div class="brd-style-inset">inset — рамка с тенями от источника света, находящегося в нижнем правом
+						внутреннем углу.</div>
+					<div class="brd-style-outset">outset — рамка с тенями от источника света, находящегося в левом верхнем
+						внутреннем углу.</div>
 
 					<div class="border-color">
 						<p class="connect">Свойство border-color управляет цветом рамки элемента.</p>
-						<p class="text">Можно писать одно, два, три или четыре значения, разделяя их пробелами. В зависимости от этого получится разный результат:</p>
+						<p class="text">Можно писать одно, два, три или четыре значения, разделяя их пробелами. В зависимости
+							от
+							этого получится разный результат:</p>
 					</div>
 
-					<div class="brd-color-1">одно значение — border-color: tomato — одно значение, цвет рамки со всех сторон одинаковый.</div>
-					<div class="brd-color-2">два значения — border-color: tomato skyblue — два значения, первое устанавливает цвет рамки сверху и снизу, второе — слева и справа.</div>
-					<div class="brd-color-3">три значения — border-color: tomato skyblue olive — три значения, первое значение устанавливает цвет рамки сверху, второе — слева и справа, а третье — снизу.</div>
-					<div class="brd-color-4">четыре значения — border-color: tomato skyblue olive silver — четыре значения, устанавливает для каждой стороны свой цвет, поочерёдно: для верхней, правой, нижней и левой рамки.</div>
-
-				
+					<div class="brd-color-1">одно значение — border-color: tomato — одно значение, цвет рамки со всех сторон
+						одинаковый.</div>
+					<div class="brd-color-2">два значения — border-color: tomato skyblue — два значения, первое устанавливает
+						цвет рамки сверху и снизу, второе — слева и справа.</div>
+					<div class="brd-color-3">три значения — border-color: tomato skyblue olive — три значения, первое
+						значение
+						устанавливает цвет рамки сверху, второе — слева и справа, а третье — снизу.</div>
+					<div class="brd-color-4">четыре значения — border-color: tomato skyblue olive silver — четыре значения,
+						устанавливает для каждой стороны свой цвет, поочерёдно: для верхней, правой, нижней и левой рамки.
+					</div>
 				</div>
 			</div>
+			<!-- ЗДЕСЬ ЗАКАНЧИВАЕТСЯ МАТЕРИАЛ ПО УРОКУ -->
 
-			<!-- <div class="margin-style" id="les5_2">
-				<h2 class="title">Внешний отступ. Margin</h2>
-				<div class="description">
-					<p class="text">margin: ; - это внешний отступ, расстояние от границы объекта до другого объекта.</p>
-					<p class="text">margin: ; - работает ТОЛЬКО для БЛОЧНЫХ объектов.</p>
-					<p class="text">Значение margin задаются единицами измерения - px / % / em / rem; </p>
-					<p class="text mark-text">Значение margin может быть как положительным, так и отрицательным!</p>
-					<p class="text">При использовании отрицательного margin текущий объект поднимается вверх и ВСЕ объекты
-						следующие за ним ТАКЖЕ поднимаются вверх. Важно помнить это свойство отрицательного margin.</p>
-					<p class="text mark-text">Используя внешний отступ / margin: 0 auto; / можно отцентрировать объект по
-						горизонтали. При выполнении следующих условий:
-					</p>
-					<ul>
-						<li>Объект должен быть блочным</li>
-						<li>Объект должен быть Уже по ширине чем родитель</li>
-						<li>Объекту задано выравнивание = margin: 0 auto;</li>
-					</ul>
-					<p class="text mark-text">Используя внешний отступ / margin: 0 0 0 auto; / можно ПРИБИТЬ блок к правой
-						стороне.
-					</p>
+			<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАКЕТ ФИГМА -->
+			<div class="testimonials" id="les6_4">
+				<h2 class="title-f">What Customes Say</h2>
+				<p class="subtitle-f">Why sir end believe uncivil respect. Always get adieus nature day course for common.
+					My
+					little
+					garret repair to desire he esteem.</p>
+				<h3 class="content-title">Great Service!!</h3>
+				<p class="content-text">“On the other hand, we denounce with righteous indignation and dislike men who are
+					so
+					beguiled and demoralized by the charms of pleasure.Blessing welcomed ladyship she met humoured sir
+					breeding
+					her. Six curiosity day assurance bed necessary.”</p>
+				<p class="tr-name">Dragos Gontariu</p>
+				<p class="tr-description">Mareting Manager</p>
+				<img src="img/fitness_trainer_man.jpg" alt="Dragos Gontariu" width="468">
+			</div>
+			<!-- ЗДЕСЬ ЗАКАНЧИВАЕТСЯ МАКЕТ ФИГМА -->
 
-					<p class="text mark-text">СХЛОПЫВАНИЕ margin.</p>
-					<p class="text">Если margin задан и снизу и сверху, то он накладывается друг на друга или "схлопывается".
-						При этом если верхний margin 100px, а нижний margin 140px, то схлопывание происходит по бОльшему
-						значению и внешний отступ между объектами составит 140px.</p>
-					<p class="text">Если верхний margin 50px и нижний margin 50px, то в результате схлопывания внешний отступ
-						между объектами составит 50px.
+		</main>
 
-						<p class="text">Для блочно-строчных объектов margin НЕ СХЛОПЫВАЕТСЯ, а суммируется. Но для упрощения расчетов лучше всегда выставлять только нижний margin.
-						</p>
-					</div>
-
-					<div class="margin-connect">
-						<p class="connect">Существует несколько вариантов подключения margin</p>
-						<div class="m-vars">
-							<div class="m-var-1">Перечисление в НЕСКОЛЬКО строк свойств внешнего отступа
-								margin-top - 30px / margin-right - 40px / margin-bottom - 35px / margin-left - 45px.</div>
-							<div class="m-var-2">Сокращенная запись в ОДНО значение = margin: 80px; - отступ со всех сторон по
-								80px.</div>
-							<div class="m-var-3">Сокращенная запись в ДВА значения = margin: 30px 20px;- отступ сверху и снизу -
-								30x / слева и справа по 20px.</div>
-							<div class="m-var-4">Сокращенная запись в ТРИ значения = margin: 60px 150px 40px; - отступ сверху
-								60рх / слева и справа по 150рх / снизу 40рх.</div>
-							<div class="m-var-5">Сокращенная запись в ЧЕТЫРЕ значения, указанная В ОДНОЙ строке. Очередность
-								указания как на часах 12 часов - верхний / 3 часа - правый / 6 часов - нижний / 9 часов - левый. В
-								примере верхний 30рх / правый 50рх / нижний 40рх / левый 60рх margin: 30px 50px 40px 60px.</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="width-style" id="les5_3">
-					<h2 class="title">Ширина объекта</h2>
-					<div class="description">
-						<p class="text">Ширина объекта WIDTH может указываться тремя способами</p>
-						<p class="text"><span class="mark-text">Конкретным значением.</span> Значение width задается единицами
-							измерения - px / % / em / rem;</p>
-						<p class="text"><span class="mark-text">НЕ ШИРЕ ЧЕМ.</span> Значение width задается единицами измерения -
-							px / % / em / rem;</p>
-						<p class="text"><span class="mark-text">НЕ УЖЕ ЧЕМ.</span> Значение width задается единицами измерения -
-							px / % / em / rem;</p>
-						<p class="text mark-text">Ширина не задается строчными тегам!!!!!! Со строчными тегами свойства width НЕ
-							РАБОТАЕТ!!!
-						</p>
-						<p class="text mark-text">ВАЖНО!!! Значение widht = auto или 100%. </p>
-						<p class="text">При значение widht: auto; и margin-right: 50px объект ужмется и появится внешний отступ.</p>
-						<p class="text">При значение widht: 100%; и margin-right: 50px объект все равно будет занимать ВСЮ ширину, а внешний отступ появится за пределами.
-						</p>
-					</div>
-
-					<div class="block-w-1">
-						<span class="mark-text">КОНКРЕТНАЯ ШИРИНА. Если родитель и вьюпорт меньше указанного параметра width:
-							300px, то содержимое
-							блока сломается и будет заходить за правый край экрана.</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<div class="block-w-1-2">
-						<span class="mark-text">КОНКРЕТНАЯ ШИРИНА. Если значение указано в % = width: 50%; то ширина будет всегда
-							50% родителя и при
-							уменьшении вьюпорта содержимое будет пропорциально уменьшаться и будет оставаться свободное
-							поле.</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<div class="block-w-2">
-						<span class="mark-text">НЕ ШИРЕ ЧЕМ - max-width: 800px; - ширина объекта не шире, чем 800px
-							Шире указанного параметра объект не будет. Уже он может быть, шире нет. Если родитель и вьюпорт меньше
-							указанного параметра max-width, то содержимое блока будет уменьшаться пропорционально имеющемуся
-							размеру. Если родитель или вьпорт больше указанного параметра max-width, то образуется свободное
-							поле.</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum
-						fugiat pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<div class="block-w-2-2">
-						<span class="mark-text">НЕ ШИРЕ ЧЕМ - max-width: 50%;
-							Если значение указано в % = max-width: 50%; то ширина содержимого будет всегда
-							50% родителя. При уменьшении родителя содержимое будет уменьшаться и всегда будет оставаться поле
-							50%</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<div class="block-w-3">
-						<span class="mark-text">НЕ УЖЕ ЧЕМ - min-width: 500px; - ширина объекта не уже, чем 500px.
-							Если родитель и вьюпорт меньше указанного параметра min-width: 500px; , то содержимое блока сломается
-							и будет заходить за правый край экрана</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<div class="block-w-3-2">
-						<span class="mark-text">НЕ УЖЕ ЧЕМ - min-width: 50%;
-							Если значение указано в % = min-width: 50%; то вначале содержимое объекта займет
-							всю ширину объекта, а при уменьшении ширины родитедя
-							содержимое уменьшится до 50% и далее продложит уменьшаться не ломаясь.</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<h2 class="title" id="les5_4">Высота объекта</h2>
-
-					<div class="description">
-						<p class="text">Высота объекта HEIGHT может указываться тремя способами</p>
-						<p class="text"><span class="mark-text">Конкретным значением.</span> Значение height задается единицами
-							измерения - px / % / em / rem;</p>
-						<p class="text"><span class="mark-text">НЕ БОЛЬШЕ ПО ВЫСОТЕ ЧЕМ - max-height.</span> Значение height
-							задается единицами измерения -
-							px / % / em / rem;</p>
-						<p class="text"><span class="mark-text">НЕ МЕНЬШЕ ПО ВЫСОТЕ ЧЕМ - min-height.</span> Значение height
-							задается единицами измерения -
-							px / % / em / rem;</p>
-						<p class="text mark-text">Высота height не задается строчными тегам!!!!!! Со строчными тегами свойства
-							height НЕ
-							РАБОТАЕТ!!!
-						</p>
-					</div>
-
-					<div class="block-h-1">
-						<span class="mark-text">КОНКРЕТНАЯ ВЫСОТА - height: 150px; Если блоку выставить конретную высоту, то в
-							случае если конктента будет больше чем выставленный конкретный параметр высоты, контент вылезет за
-							пределы объекта.</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-					<div class="block-h-2">
-						<span class="mark-text">НЕ БОЛЬШЕ ПО ВЫСОТЕ ЧЕМ - max-height: 200px. Если блоку
-							выставить max-height, то в случае если конктента будет больше чем выставленный параметр, то контент
-							ОПЯТЬ ЖЕ вылезет за пределы
-							объекта.</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-
-					<div class="block-h-3">
-						<span class="mark-text">НЕ МЕНЬШЕ ПО ВЫСОТЕ ЧЕМ - min-height: 200px;. Если блоку
-							выставить min-height, то в случае если конктента будет больше, чем минимальный параметр высоты, то
-							блок начнет
-							увеличиваться под размерм контента .</span>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus, neque
-						quod tempora provident odit! Architecto suscipit debitis laborum dignissimos, deleniti, voluptatum fugiat
-						pariatur ducimus quasi, unde voluptatibus ipsum placeat.
-					</div>
-				</div>
-
-				<div class="box-style" id="les5_5">
-					<h2 class="title">Вычисление общего размера. box-sizing</h2>
-
-					<div class="description">
-						<p class="text">По умолчанию размером элемента считается размер контентной области. Если указываешь width, height и padding, то браузер посчитает размер элемента как width + padding * 2 и height + padding * 2.</p>
-
-						<p class="text">При помощи свойства box-sizing можно изменить то, как браузер будет рассчитывать размеры элемента.</p>
-						<p class="text">В качестве значения для свойства <span class="mark-text">box-sizing</span> невозможно использовать что-то кроме ключевых слов. Значение может быть только одно.</p>
-						<p class="text connect">Доступные значения:</p>
-						<ul>
-							<li>- <span class="mark-text">content-box</span> — значение по умолчанию. Финальная ширина = ширина + правый внутренний отступ + левый внутренний отступ + правая рамка + левая рамка</li>
-							<li>- <span class="mark-text">border-box — значение width / height</span> являются финальными размерами элемента. Финальная ширина = ширина</li>
-						</ul>
-
-						<p class="text">Из-за стандартного механизма расчёта размера элемента многие начинающие разработчики получают не те размеры элемента, которые ожидали. </p>
-						<p class="text">При этом есть вариант решения: В самом начале работы «сбросить» стандартное значение, заменив его на предсказуемое `box-sizing`.</p>
-						<p class="text">Для «сброса» можно использовать универсальный селектор `*`. Напиши в самом начале файла со стилями:<br>
-							css<br>
-							* {<br>
-							box-sizing: border-box;<br>
-							}<br>
-						</p>
-						<p class="text">Теперь все размеры элементов будут равны тем значениям, что заданы в свойствах `width` / `height`.</p>
-						<p class="text">Важно! Данная технология работает ТОЛЬКО с внутренними отступами, за счет уменьшения размера контента.
-							При применении внешних отступов margin, размер конечно будет размер блока + внешний отступ</p>
-					</div>
-				</div>
-
-				<div class="overfl-style" id="les5_6">
-					<h2 class="title">OVERFLOW - Управление переизбытком контента</h2>
-
-					<div class="description">
-						<p class="text">Свойство overflow позволяет буквально определить, что делать с содержимым блочного элемента (то есть для элемента, у которого display определяется как block, inline-block, flex или grid) , если оно не влезает в размеры — отобразить или обрезать (с полосами прокрутки или без).</p>
-						<p class="text">Как пишется:<br>
-							selector {<br>
-							overflow: visible;<br>
-							overflow: hidden;<br>
-							overflow: clip;<br>
-							overflow: scroll;<br>
-							overflow: auto;<br>
-							}</p>
-
-						<p class="text">visible — содержимое отображается снаружи родительского блока, если его размеры больше размеров «родительского» блока (значение по умолчанию);</p>
-						<p class="text">hidden — содержимое, выходящее за пределы «родительского» блока, обрезается по его границам без прокрутки;</p>
-						<p class="text">scroll — контент обрезается по границам «родительского» блока, но внутри этой области содержимое доступно с помощью прокрутки;</p>
-						<p class="text">auto — если содержимое переполняет блок, контент будет доступен для прокрутки.</p>
-						<p class="text">ВАЖНО!!! Полоса скролла считается внутри объекта!!! не снаружи!!!.</p>
-						<p class="text">ВАЖНО!!! overflow используется в сочетании с min-height (когда высота объекта ограничена) то есть нам нужно исходя из задачи поместить большой по размеру контент в набольшой по высоте блок .</p>
-						<p class="text">ВАЖНО!!! overflow используется для работы с картинкой большого размера, если нужно ее спозиционировать на странице, а лишнее по дизайну обрезать .</p>
-					</div>
-
-					<div class="ovfl-1"><span class="mark-text">В этом примере все содержимое будет показано вне зависимости размера блока.</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. </div>
-					<div class="ovfl-2"><span class="mark-text">В этом примере все содержимое будет обрезано по размеру блока.</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae? A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat.</div>
-					<div class="ovfl-3"><span class="mark-text">В этом примере все содержимое будет обрезано по размеру родительского блока, но возможно прокручивание скроллом. Принудительный показ скролла снизу и справа даже если контент помещается внутри объекта.</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae? A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat.</div>
-					<div class="ovfl-4"><span class="mark-text">В этом примере если содержимое переполняет блок, контент будет доступен для прокрутки. Скролл только справа</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae? A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat. A, molestiae?Voluptatibus voluptates mollitia quibusdam excepturi eligendi sunt, rerum doloremque quod labore reprehenderit minus quam totam architecto velit repellendus, voluptate fugiat.</div>
-				</div>
-
-				<div class="display-style" id="les5_7">
-					<h2 class="title">DISPLAY - Управление типом объекта</h2>
-					<div class="description">
-						<p class="text">По умолчанию все элементы в HTML бывают блочными и строчными. Но в вёрстке часто случаются ситуации, что нам нужно изменить свойства элемента и сделать его не строчным, а блочным. И наоборот.</p>
-						<p class="text">Тут на помощь приходит свойство `display`. Слово **display** переводится с английского просто и ожидаемо — показывать.</p>
-						<p class="text">Помимо значений `block` (блочное отображение) и `inline` (строчное отображение) существует смешанное значение `inline-block`.</p>
-						<p class="text connect">Значения свойства, которые встречаются в работе чаще всего:</p>
-						<p class="text">- `none` — полностью скрывает элемент со страницы, не удаляя его при этом из HTML-разметки.<br> <span class="mark-text">Важно!! Если нужно скрыть объект на странице, лучше использовать аттрибут HIDDEN в свойствах объекта.</span></p>
-						<p class="text">- `block` — элемент ведёт себя как блочный.</p>
-						<p class="text">- `inline-block` — элемент ведёт себя снаружи как строчный, а внутри как блочный.</p>
-						<p class="text mark-text">Если пишешь display: inline-block с целью выстроить несколько блоков в строку, то обязательно указывай для родительского элемента font-size: 0. В противном случае между инлайн-блочными элементами будут небольшие отступы.</p>
-						<p class="text mark-text">Ссылки изначально являются строчными элементами. Для изменения размера ссылки и для возможности задать ей фон её, ссылку, нужно сделать блочной (display: block) или строчно-блочной (display: inline-block).</p>
-					</div>
-				</div> -->
-			</main>
-
-			<footer class="footer">
-				<nav class="menu-pages">
+		<footer class="footer">
+			<!-- <nav class="menu-pages">
 					<img src="img/menu_bullet_star.png" alt="разделитель списка">
 					<a class="link" href="index.html">Статья с форматированием</a>
 					<img src="img/menu_bullet_star.png" alt="разделитель списка">
 					<a class="link" href="index_figma.html">Фрагмент макета Фигмы</a>
 					<img src="img/menu_bullet_star.png" alt="разделитель списка">
-				</nav>
+				</nav> -->
 
-				<p>Это нижняя часть страницы. Подвал<br><br><br>
-					<a href="#">К началу страницы (Наверх)</a><br><br><br>
-					&#169; 2022. Михаил Уланов
-				</p>
-			</footer>
-		</div>
-	</body>
+			<div>
+				<p class="footer-text">Это нижняя часть страницы. Подвал</p>
+				<p class="footer-text"><a href="#">К началу страницы (Наверх)</a></p>
+				<p class="footer-text">&#169; 2022. Михаил Уланов</p>
+			</div>
+		</footer>
+	</div>
+</body>
 
 </html>
 
