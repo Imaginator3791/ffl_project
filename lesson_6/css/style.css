@@ -12,6 +12,7 @@ body {
 	color: #180202;
 	max-width: 1440px;
 	margin: 0 auto;
+	padding-left: 50px;
 }
 /* 
 div {
@@ -38,10 +39,6 @@ div {
 	padding: 50px 0;
 }
 
-.lesson6-style {
-	margin-bottom: 140px;
-}
-
 .menu {
 	margin: 30px 0 70px 0;
 	text-align: center;
@@ -54,6 +51,11 @@ div {
 	text-transform: uppercase;
 	color: darkred;
 	font-size: 24px;
+}
+
+.page-link {
+	text-decoration: underline;
+	color: darkred;
 }
 
 .mark-text {
@@ -84,53 +86,67 @@ div {
 	color: brown;
 }
 
-.text {
-	margin: 15px 0;
+.connect {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.5;
+	padding: 0 0 10px 30px;
 }
 
-/* .text-brd {
-	margin-bottom: 25px 0;
-} */
+.page-image {
+	margin: 0 0 30px 0;
+}
+
+.text {
+	margin: 0 0 20px 0;
+}
+
+.lesson6-style {
+	margin: 0 0 140px 0;
+}
+
+.border-style {
+	margin: 0 0 100px 0;
+}
 
 .li-style-brd {
-	margin-bottom: 100px;
+	margin: 0 0 100px 0;
 }
 
 .brd-w1 {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 1px solid tomato;
 }
 
 .brd-wt {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border-top: 3px solid tomato;
 }
 
 .brd-wr {
 	padding: 10px;
-	margin-bottom: 30px;
-
+	margin: 0 0 30px 0;
 	border-right: 3px solid tomato;
 }
 
 .brd-wb {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border-bottom: 3px dashed tomato;
 }
 
 .brd-wl {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border-style: dotted;
 	border-left: 3px dotted tomato;
 }
 
 .brd-wrb {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border-style: dotted;
 	border-bottom: 3px dotted tomato;
 	border-right: 3px dotted tomato;
@@ -138,84 +154,249 @@ div {
 
 .brd-style-none {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px none chocolate;
 }
 
 .brd-style-solid {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px solid chocolate;
 }
 
 .brd-style-dotted {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px dotted chocolate;
 }
 
 .brd-style-dashed {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px dashed chocolate;
 }
 
 .brd-style-double {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px double chocolate;
 }
 
 .brd-style-groove {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 10px groove chocolate;
 }
 
 .brd-style-ridge {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 10px ridge chocolate;
 }
 
 .brd-style-inset {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 10px inset chocolate;
 }
 
 .brd-style-outset {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 10px outset chocolate;
+}
+
+.brd-inline {
+	margin: 0 0 30px 0;
+}
+
+.brd-inline-text {
+	border-bottom: 2px dotted green;
+	line-height: 125%;
 }
 
 .brd-color-1 {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px solid;
 	border-color: tomato;
 }
 
 .brd-color-2 {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px solid;
 	border-color: tomato skyblue;
 }
 
 .brd-color-3 {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px solid;
 	border-color: tomato skyblue olive;
 }
 
 .brd-color-4 {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin: 0 0 30px 0;
 	border: 5px solid;
 	border-color: tomato skyblue olive silver;
+}
+
+.border-radius {
+	margin: 0 0 100px 0;
+}
+
+.brd-rad-1 {
+	background-color: aquamarine;
+	max-width: 500px;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 0 0 50px 0;
+}
+
+.brd-rad-2 {
+	background-color: rgba(122, 114, 163, 0.473);
+	max-width: 800px;
+	padding: 30px;
+	border: 5px solid green;
+	border-radius: 200px / 100px;
+	margin: 0 0 50px 0;
+}
+
+.brd-rad-3 {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	border: 4px dotted darkred;
+	margin: 0 0 50px 0;
+}
+
+.outln-style {
+	margin: 0 0 100px 0;
+}
+
+.outln-st-none {
+	outline: 10px none darkgreen;
+	margin: 0 auto 50px;
+}
+
+.outln-st-dotted {
+	outline: 5px dotted darkgreen;
+	max-width: 800px;
+	margin: 0 0 50px 30px;
+}
+
+.outln-st-dashed {
+	outline: 5px dashed darkgreen;
+	max-width: 800px;
+	margin: 0 auto 50px;
+}
+
+.outln-st-solid {
+	outline: 5px solid darkgreen;
+	max-width: 800px;
+	margin: 0 0 50px 30px;
+	/* outline-offset: 10px; */
+}
+
+.outln-st-double {
+	max-width: 800px;
+	margin: 0 auto 50px;
+	outline: 5px double darkgreen;
+}
+
+.outln-st-groove {
+	max-width: 800px;
+	margin: 0 0 50px 30px;
+	outline: 10px groove darkgreen;
+	/* outline-offset: 10px; */
+}
+
+.outln-st-ridge {
+	max-width: 800px;
+	margin: 0 auto 50px;
+	outline: 10px ridge darkgreen;
+	/* outline-offset: 10px; */
+}
+
+.outln-st-inset {
+	max-width: 800px;
+	margin: 0 0 50px 30px;
+	outline: 10px inset darkgreen;
+}
+
+.outln-st-outset {
+	max-width: 800px;
+	margin: 0 auto 50px;
+	outline: 10px outset darkgreen;
+	/* outline-offset: 10px; */
+}
+
+.bxshdw-style {
+	margin: 0 0 100px 0;
+}
+
+.bxshdw-1 {
+	box-shadow: 10px 10px 10px 10px darkblue;
+	max-width: 600px;
+	margin: 0 0 100px 0;
+	padding: 10px;
+	border: 3px solid yellowgreen;
+	border-radius: 10px;
+}
+
+.bxshdw-2 {
+	box-shadow: 10px 10px 1px 10px darkblue, -10px -10px 1px 10px darkmagenta;
+	max-width: 600px;
+	margin: 0 0 100px 30px;
+	padding: 10px;
+	border: 3px solid yellowgreen;
+	border-radius: 10px;
+}
+
+.bxshdw-3 {
+	box-shadow: inset 0px 0px 15px 0px darkblue;
+	max-width: 600px;
+	margin: 0 0 100px 0;
+	padding: 10px;
+	border: 3px solid yellowgreen;
+	border-radius: 10px;
+}
+
+.opsty-style {
+	margin: 0 0 100px 0;
+}
+
+.opsty-st-2 {
+	color: red;
+	max-width: 600px;
+	margin: 0 0 100px 0;
+	padding: 10px;
+	border: 3px solid darkslategray;
+	border-radius: 10px;
+	opacity: 0.4;
+}
+
+.opsty-img {
+	opacity: 0;
+}
+
+.vsblty-style {
+	margin: 0 0 140px 0;
+}
+
+.vsblty-st-1 {
+	visibility: visible;
+	max-width: 600px;
+	padding: 10px;
+	border: 3px solid darkslategray;
+	border-radius: 10px;
+}
+
+.vsblty-img-1 {
+	visibility: hidden;
 }
 
 /* ------- СТИЛИ МАКЕТА ФИГМА ------ */

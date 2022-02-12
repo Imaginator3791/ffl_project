@@ -16,17 +16,17 @@
 	<div class="wrapper">
 		<header>
 			<div class="header">
+				<h1>Урок 6</h1>
 				Верхняя часть страницы. Шапка
 			</div>
 			<nav class="menu">
 				<a class="menu-link" href="#les6_1">border</a>
 				<a class="menu-link" href="#les6_2">border-radius</a>
-				<a class="menu-link" href="#les6_3">outline</a>
-				<a class="menu-link" href="#les6_4">фрагмент макета Figma</a>
-				<!-- <a class="menu-link" href="#les5_4">height</a>
-					<a class="menu-link" href="#les5_5">box-sizing</a>
-					<a class="menu-link" href="#les5_6">overflow</a>
-					<a class="menu-link" href="#les5_7">display</a> -->
+				<a class="menu-link" href="#les6_8">outline</a>
+				<a class="menu-link" href="#les6_9">box-shadow</a>
+				<a class="menu-link" href="#les6_10">opacity</a>
+				<a class="menu-link" href="#les6_11">vizibility</a>
+				<a class="menu-link" href="#les6_4">макет Figma</a>
 			</nav>
 		</header>
 
@@ -34,7 +34,7 @@
 			<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАТЕРИАЛ ПО УРОКУ -->
 
 			<div class="lesson6-style">
-
+				<!-- BORDER RADIUS -->
 				<div class="border-style" id="les6_1">
 					<h2 class="title">Свойство блока - граница. border</h2>
 					<div class="description">
@@ -46,7 +46,7 @@
 							объектов.
 						</p>
 						<p class="text">Для строчных объектов допускается использование border, например для достижения
-							необходимого эффекта подчеркивания в тексте например.</p>
+							необходимого эффекта подчеркивания в тексте <a class="page-link" href="#les6_5">например.</a></p>
 						<p class="text">Общепринятым порядоком написания значений border считается следующий (главное
 							разделять
 							их пробелами) : ширина → стиль → цвет рамки.</p>
@@ -71,9 +71,28 @@
 					<div class="brd-wl">border-left: ; — значение border слева.</div>
 					<div class="brd-wrb">border-right: ; border-bottom: ; — значение border справа и снизу.</div>
 
-					<div class="border-style">
-						<p class="connect">Стиль рамки задаётся при помощи ключевых слов:</p>
-					</div>
+
+					<p class="text mark-text">Изучая вопрос, раскопал и опробовал на практике следующие свойства border.
+						Надеюсь, это не является нарушением этики, что немного вышел за рамки поданного на лекции материала.
+					</p>
+					<p class="text">Допускается указывать одно, два, три или четыре значения. В зависимости от этого
+						получится разный результат:</p>
+
+					<p class="text">border-width: 1px — одно значение, толщина рамки со всех сторон одинаковая.
+					</p>
+					<img class="page-image" src="img/brd_width_1.jpg" alt="одно значение бордер">
+					<p class="text">border-width: 1px 2px — два значения, первое устанавливает толщину рамки сверху и
+						снизу, второе — слева и справа.</p>
+					<img class="page-image" src="img/brd_width_2.jpg" alt="два значения бордер">
+					<p class="text">border-width: 1px 2px 3px — три значения, первое значение устанавливает толщину рамки
+						сверху, второе — слева и справа, а третье — снизу.</p>
+					<img class="page-image" src="img/brd_width_3.jpg" alt="три значения бордер">
+					<p class="text">border-width: 1px 2px 3px 4px — четыре значения, устанавливает для каждой стороны свою
+						толщину, поочерёдно: для верхней, правой, нижней и левой рамки.</p>
+					<img class="page-image" src="img/brd_width_4.jpg" alt="четыре значения бордер">
+
+					<p class="connect">Стиль рамки задаётся при помощи ключевых слов:</p>
+
 					<div class="brd-style-none">none — отключает рамку (значение по умолчанию).</div>
 					<div class="brd-style-dotted">dotted — рамка состоит из точек с пробелами между ними.</div>
 					<div class="brd-style-dashed">dashed — рамка состоит из коротких чёрточек с пробелами между ними.</div>
@@ -89,11 +108,16 @@
 					<div class="brd-style-outset">outset — рамка с тенями от источника света, находящегося в левом верхнем
 						внутреннем углу.</div>
 
+					<div class="brd-inline" id="les6_5"><span class="brd-inline-text">Для строчных объектов допускается
+							использование border, например для достижения необходимого эффекта подчеркивания в тексте. Lorem
+							ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi tenetur quaerat eius accusantium
+							amet, beatae rem optio commodi nulla! Sunt consectetur qui eum dolore quae dolorum nemo assumenda
+							error.</span> </div>
+
 					<div class="border-color">
 						<p class="connect">Свойство border-color управляет цветом рамки элемента.</p>
 						<p class="text">Можно писать одно, два, три или четыре значения, разделяя их пробелами. В зависимости
-							от
-							этого получится разный результат:</p>
+							от этого получится разный результат:</p>
 					</div>
 
 					<div class="brd-color-1">одно значение — border-color: tomato — одно значение, цвет рамки со всех сторон
@@ -105,6 +129,232 @@
 						устанавливает цвет рамки сверху, второе — слева и справа, а третье — снизу.</div>
 					<div class="brd-color-4">четыре значения — border-color: tomato skyblue olive silver — четыре значения,
 						устанавливает для каждой стороны свой цвет, поочерёдно: для верхней, правой, нижней и левой рамки.
+					</div>
+				</div>
+
+				<!-- BORDER RADIUS -->
+				<div class="border-radius" id="les6_2">
+					<h2 class="title">Свойство блока - скругление границы. border-radius</h2>
+					<div class="description">
+						<p class="text">Свойство border-radius закругляет углы почти у любого элемента.</p>
+						<p class="text">Свойство работает даже если у блока не задана явная рамка.</p>
+						<p class="text">.selector {<br>
+							border: none;<br>
+							border-radius: 5px;<br>
+							} </p>
+						<p class="text">На практике в большинстве случае используется упрощенная запись с указанием одного
+							значения скругления для всех углов.<br>
+							.selector {<br>
+							border-radius: 20px;}</p>
+						<p class="text">Можно управлять радиусом закругления каждого угла в отдельности при помощи свойств:
+						</p>
+						<p class="text">border-top-left-radius — радиус закругления для левого верхнего угла.</p>
+						<p class="text">border-top-right-radius — радиус закругления для правого верхнего угла.</p>
+						<p class="text">border-bottom-right-radius — радиус закругления для правого нижнего угла.</p>
+						<p class="text">border-bottom-left-radius — радиус закругления для левого нижнего угла.</p>
+						<p class="text">Если значение задано в процентах, то оно будет высчитываться от размеров элемента:
+							горизонтальные размеры будут высчитываться от ширины элемента, а вертикальные — соответственно, от
+							высоты.</p>
+
+						<p class="text"><a class="page-link" href="#les6_7">Можно управлять степенью закругления каждого из
+								углов</a> в отдельности или задать одно значение для всех углов сразу. Причём значение на самом
+							деле состоит из двух — скругления по горизонтальной оси и по вертикальной. Чтобы явно задать
+							скругление для каждой из осей (т. е. получить не круглое значение, а эллипсоидное), это значение
+							следует записывать через символ /:</p>
+						<p class="text">.selector {<br>
+							border-radius: 200px / 100px;</p>
+
+						<p class="text"><a class="page-link" href="#les6_6">Используя border-radius можно сделать круголое
+								изображение</a>.
+							Для этого нужно использовать квадратное изображение, а в СЕЛЕКТОРЕ РОДИТЕЛЯ указать ширину и высоту
+							картинки, border-radius: 50%; - это скруглит углы до размера круга и указать свойство overflow:
+							hidden; - которое обрежет лишнее. </p>
+						<p class="text">Ширину и высоту нужно задавать ВСЕГДА, потому что в дальнейшем картинка может
+							поменяться и не быть изначально квадратной.</p>
+						<p class="text">.selector {<br>
+							border-radius: 50%;<br>
+							width: 300px;<br>
+							height: 300px;<br>
+							overflow: hidden;<br>
+							border: 4px dotted darkred;</p>
+
+					</div>
+					<p class="connect">Примеры:</p>
+
+					<div class="brd-rad-1">На практике в большинстве случае используется упрощенная запись с указанием одного
+						значения скругления для всех углов.</div>
+
+					<div class="brd-rad-2" id="les6_7">Можно управлять степенью закругления каждого из углов в отдельности
+						или задать одно значение для всех углов сразу. Причём значение на самом деле состоит из двух —
+						скругления по горизонтальной оси и по вертикальной. Чтобы явно задать скругление для каждой из осей
+						(т. е. получить не круглое значение, а эллипсоидное), это значение следует записывать через символ /:
+					</div>
+
+					<div class="brd-rad-3" id="les6_6">
+						<img src="img/image-401.jpg" alt="круглая картинка">
+					</div>
+				</div>
+
+				<!-- OUTLINE -->
+				<div class="outln-style" id="les6_8">
+					<h2 class="title">Свойство блока - outline</h2>
+					<div class="description">
+
+						<p class="text">Не влияет на размеры элемента, можно отодвинуть от границ на любое расстояние. Не
+							влияет на соседние блоки, не отодвигает их. Нависает над ними</p>
+						<p class="text">outline применяется сразу ко всем сторонам.</p>
+
+						<p class="text">selector {<br>
+							outline: [outilne-width] [outilne-style] [outilne-color];<br>
+							}</p>
+
+						<p class="connect">outline-width</p>
+						<p class="text">Ключевые слова thin, medium, thick — задают тонкую, среднюю или толстую ширину.
+							Значения в пикселях на усмотрение браузера, но обычно соответствует 1, 3 и 6 пикселям
+							соответственно.</p>
+						<p class="text">Конкретный размер — размер в любых единицах измерения, доступных в вебе. Например,
+							10px или 0.2em.</p>
+
+						<p class="connect"> outline-style</p>
+						<p class="text">none — обводка не отображается, даже если задано значение для outline-width.</p>
+						<p class="text">dotted — обводка будет состоять из точек. Круглых точек, вроде такого •••••</p>
+						<p class="text">dashed — обводка будет в виде пунктирной линии.</p>
+						<p class="text">solid — значение по умолчанию, если не задано иное. Сплошная линия.</p>
+						<p class="text">double — двойная сплошная линия.</p>
+						<p class="text">groove — обводка будет отображаться так, будто рамка объёмная, с вдавленной серединой
+							и подсвечена. Цвет обводки (если он отличен от чёрного) станет двухцветным.</p>
+						<p class="text">ridge — обводка отобразится объёмной, её центр будет приподнят. Противоположно groove.
+						</p>
+						<p class="text">inset — объёмная рамка, края направлены внутрь элемента.</p>
+						<p class="text">outset — объёмная рамка, края направлены наружу элемента, противоположно inset.</p>
+
+						<p class="connect"> outline-color</p>
+						<p class="text">любое доступное значение цвета в вебе, включая ключевые слова transparent,
+							currentColor</p>
+					</div>
+
+					<p class="connect">Примеры:</p>
+					<div class="outln-st-none">none — обводка не отображается, даже если задано значение для outline-width.
+					</div>
+					<div class="outln-st-dotted">dotted — обводка будет состоять из точек. Круглых точек, вроде такого •••••
+					</div>
+					<div class="outln-st-dashed">dashed — обводка будет в виде пунктирной линии.</div>
+					<div class="outln-st-solid">solid — значение по умолчанию, если не задано иное. Сплошная линия.</div>
+					<div class="outln-st-double">double — двойная сплошная линия.</div>
+
+					<div class="outln-st-groove">groove — обводка будет отображаться так, будто рамка объёмная, с вдавленной
+						серединой
+						и подсвечена. Цвет обводки (если он отличен от чёрного) станет двухцветным.</div>
+					<div class="outln-st-ridge">ridge — обводка отобразится объёмной, её центр будет приподнят.
+						Противоположно groove.</div>
+					<div class="outln-st-inset">inset — объёмная рамка, края направлены внутрь элемента.</div>
+					<div class="outln-st-outset">outset — объёмная рамка, края направлены наружу элемента, противоположно
+						inset.</div>
+				</div>
+
+
+				<!-- BOX-SHADOW -->
+				<div class="bxshdw-style" id="les6_9">
+					<h2 class="title">Свойство блока - box-shadow</h2>
+					<div class="description">
+						<p class="text">box-shadow - добавляет тень к элементу. Тень может быть внтурення и внешняя. </p>
+						<p class="text">Можно добавить много теней. Аттрибуты каждой последующей тени задаются после запятой в
+							конце атрибутов первой тени.</p>
+						<p class="text">selector {<br>
+							box-shadow: [сдвиг_по_гориз] [сдвиг_по_верт] [радиус(размытие)] [расстояние(размер)] [цвет];<br>
+							}</p>
+						<p class="text">Смещения по осям x и y — обязательные значения для тени. Могут принимать любые
+							числовые значения, в том числе отрицательные. Значение по умолчанию равно 0 для обеих осей. Если
+							первое значение положительное, то тень будет справа от элемента, если отрицательное — слева.
+							Если второе значение положительное, то тень будет снизу, если отрицательное — сверху.</p>
+						<p class="text">Радиус размытия — опциональное значение, положительное числовое значение с
+							единицами измерения. По умолчанию значение 0, что делает его указание необязательным. Если не
+							указываете его или задаёте 0, то край тени будет резким, без размытия. Чем больше значение, тем
+							шире область размытия и тем светлее сама тень.</p>
+						<p class="text">Радиус распространения — опциональное значение, любое числовое значение с единицами
+							измерения. По умолчанию равно 0, размеры тени совпадают с размерами элемента. Если указано
+							отрицательное значение, то тень будет меньше, если положительное, то тень будет больше.</p>
+						<p class="text">Можно добавить внутренную тень используя inset.</p>
+						<p class="text">Если ключевое слово inset не указано в значении, то тень располагается снаружи
+							элемента. </p>
+						<p class="text">Если указать inset, то элемент как будто будет вогнут внутрь и его стенки
+							будут отбрасывать тень внутрь.</p>
+					</div>
+					<p class="connect">Примеры:</p>
+
+					<div class="bxshdw-1">Пример тени блока. ВНЕШНЯЯ ТЕНЬ. Lorem ipsum dolor sit, amet consectetur
+						adipisicing elit. Nesciunt animi quam iure vitae corporis possimus recusandae atque totam debitis
+						voluptas, enim minima quasi accusamus distinctio nisi explicabo, officia ab dicta!</div>
+
+					<div class="bxshdw-2">Пример тени блока. ДВЕ ВНЕШНИХ ТЕНИ. Аттрибуты каждой последующей тени задаются
+						после запятой в конце атрибутов первой тени .selector {box-shadow: 10px 10px 1px 10px darkblue, -10px
+						-10px 1px 10px darkmagenta;}
+					</div>
+					<div class="bxshdw-3">ВНУТРЕННЯЯ ТЕНЬ. Если в свойствах box-shadow указать inset, то
+						элемент как будто будет вогнут внутрь и его стенки будут отбрасывать тень внутрь.
+						.selector{box-shadow: inset 0px 0px 15px 0px darkblue;}</div>
+				</div>
+
+				<!-- OPACITY -->
+				<div class="opsty-style" id="les6_10">
+					<h2 class="title">Свойство блока - opacity</h2>
+					<div class="description">
+						<p class="text">Свойство opacity управляет прозрачностью элемента. С его помощью можно полностью
+							спрятать текст или элемент. А можно сделать полупрозрачным. </p>
+						<p class="text">Значения opacity варьируются от нуля (полностью прозрачный объект) до 1 (не
+							прозрачный). Промежуточные значения указываются через точку. </p>
+						<p class="text">0.5 - прозрачен на 50%</p>
+						<p class="text">0.9 - прозрачен на 10%</p>
+						<p class="text">0.1 - прозрачен на 90%</p>
+						<p class="text">ВАЖНО!!! Если задать родителю прозрачность, то прозрачными становятся все объекты
+							внутри него.</p>
+						<p class="text">Стоит быть внимательным с этим свойством: невидимый элемент всё равно остаётся на
+							странице и продолжает влиять на поток документа. Грубо говоря, если вы скроете какой-то блок при
+							помощи opacity, то он просто будет невидим, но не перестанет занимать своё место, его соседи не
+							займут его место, а родитель не схлопнется, если это был единственный ребёнок.</p>
+
+					</div>
+					<p class="connect">Примеры:</p>
+					<div class="opsty-st-2">
+						Свойство opacity управляет прозрачностью элемента. С его помощью можно полностью
+						спрятать текст или элемент. А можно сделать полупрозрачным.
+						На данном примере вторая и четвертая картинки скрыты полностью и на них заведены ссылки. Это
+						иллюстрирует, что даже если объект полностью прозрачен, то все равно остается на странице и продолжает
+						влиять на ее содержимое.
+						<img src="img/image-14.png" width="100" alt="картинка">
+						<a href="#"><img class="opsty-img" src="img/image-14.png" width="100" alt="картинка"></a>
+						<img src="img/image-14.png" width="100" alt="картинка">
+						<a href="#"><img class="opsty-img" src="img/image-14.png" width="100" alt="картинка"></a>
+					</div>
+				</div>
+
+				<!-- VISIBILITY-->
+				<div class="vsblty-style" id="les6_11">
+					<h2 class="title">Свойство блока - visibility</h2>
+					<div class="description">
+						<p class="text">Свойство visibility прячет элемент от глаз пользователя.</p>
+						<p class="text">Если при помощи opacity можно гибко изменять прозрачность элемента и делать его,
+							например, видимым на 33%, то свойство visibility имеет только два состояния: видимый и невидимый.
+						</p>
+						<p class="text">У свойства visibility всего два используемых значения:</p>
+						<p class="text">visible — значение по умолчанию, элемент видим.</p>
+						<p class="text">hidden — элемент не виден на странице, но занимает отведённое ему место, влияет на
+							поток документа.</p>
+						<p class="text">Важно!!! В отличие от opacity, свойство visibility 1) все также скрывает объект, 2)
+							место под этим объектом никуда не девается. 3) НО!!!! взаимодействовать с этим объектом уже
+							невозможно</p>
+						<p class="text"></p>
+					</div>
+					<p class="connect">Примеры:</p>
+					<div class="vsblty-st-1">
+						В отличие от opacity, свойство visibility 1) полностью скрывает объект, 2)
+						место под этим объектом никуда не девается. 3) взаимодействовать с объектом уже
+						невозможно. На данном примере вторая и четвертая картинки скрыты
+						полностью, на них заведены ссылки, взаимодествие с которыми невозможно.
+						<img src="img/image-14.png" width="100" alt="картинка">
+						<a href="#"><img class="vsblty-img-1" src="img/image-14.png" width="100" alt="картинка"></a>
+						<img src="img/image-14.png" width="100" alt="картинка">
+						<a href="#"><img class="vsblty-img-1" src="img/image-14.png" width="100" alt="картинка"></a>
 					</div>
 				</div>
 			</div>
@@ -128,21 +378,12 @@
 				<img src="img/fitness_trainer_man.jpg" alt="Dragos Gontariu" width="468">
 			</div>
 			<!-- ЗДЕСЬ ЗАКАНЧИВАЕТСЯ МАКЕТ ФИГМА -->
-
 		</main>
 
 		<footer class="footer">
-			<!-- <nav class="menu-pages">
-					<img src="img/menu_bullet_star.png" alt="разделитель списка">
-					<a class="link" href="index.html">Статья с форматированием</a>
-					<img src="img/menu_bullet_star.png" alt="разделитель списка">
-					<a class="link" href="index_figma.html">Фрагмент макета Фигмы</a>
-					<img src="img/menu_bullet_star.png" alt="разделитель списка">
-				</nav> -->
-
 			<div>
 				<p class="footer-text">Это нижняя часть страницы. Подвал</p>
-				<p class="footer-text"><a href="#">К началу страницы (Наверх)</a></p>
+				<p class="footer-text">К началу страницы <a class="page-link" href="#">(Наверх)</a></p>
 				<p class="footer-text">&#169; 2022. Михаил Уланов</p>
 			</div>
 		</footer>
@@ -150,10 +391,3 @@
 </body>
 
 </html>
-
-<!-- 
-http://study.ulam.ru/lesson_5/index.html
-
-http://study.ulam.ru/lesson_5/css/style.css
-
-http://study.ulam.ru/lesson_5/css/page.css -->
