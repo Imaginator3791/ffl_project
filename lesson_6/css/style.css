@@ -11,6 +11,7 @@ body {
 	font-size: 18px;
 	color: #180202;
 	max-width: 1440px;
+	min-height: 100%;
 	margin: 0 auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -33,12 +34,7 @@ div {
 }
 
 .footer {
-	margin: 0 auto;
-}
-
-.menu-pages {
-	text-align: center;
-	padding: 50px 0;
+	margin: 10px auto 0;
 }
 
 .menu {
@@ -49,7 +45,6 @@ div {
 
 .menu-link {
 	display: inline-block;
-	/* padding: 10px 30px; */
 	margin: 10px 30px;
 	text-transform: uppercase;
 	color: darkred;
@@ -492,3 +487,8 @@ div {
 	margin-left: 30px;
 	font-family: "CircularStd-Book", "Arial";
 }
+
+/* .menu-pages {
+	text-align: center;
+	padding: 50px 0;
+} */
