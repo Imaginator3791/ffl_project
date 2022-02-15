@@ -12,7 +12,9 @@ body {
 	color: #180202;
 	max-width: 1440px;
 	margin: 0 auto;
-	padding-left: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	/* padding-left: 50px; */
 }
 /* 
 div {
@@ -27,11 +29,11 @@ div {
 /* ====== Вставлять всегда в стили ====== */
 
 .header {
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 .footer {
-	margin: 20px auto;
+	margin: 0 auto;
 }
 
 .menu-pages {
@@ -47,7 +49,8 @@ div {
 
 .menu-link {
 	display: inline-block;
-	padding: 10px 30px;
+	/* padding: 10px 30px; */
+	margin: 10px 30px;
 	text-transform: uppercase;
 	color: darkred;
 	font-size: 24px;
@@ -99,6 +102,10 @@ div {
 
 .text {
 	margin: 0 0 20px 0;
+}
+
+.text-code {
+	margin: 0 auto;
 }
 
 .lesson6-style {
@@ -153,8 +160,8 @@ div {
 }
 
 .brd-style-none {
-	padding: 10px;
-	margin: 0 0 30px 0;
+	padding-left: 18px;
+	margin: 10px auto 30px;
 	border: 5px none chocolate;
 }
 
@@ -238,7 +245,7 @@ div {
 
 .brd-color-4 {
 	padding: 10px;
-	margin: 0 0 30px 0;
+	margin: 0 auto;
 	border: 5px solid;
 	border-color: tomato skyblue olive silver;
 }
@@ -270,7 +277,6 @@ div {
 	height: 300px;
 	overflow: hidden;
 	border: 4px dotted darkred;
-	margin: 0 0 50px 0;
 }
 
 .outln-style {
@@ -329,7 +335,7 @@ div {
 
 .outln-st-outset {
 	max-width: 800px;
-	margin: 0 auto 50px;
+	margin: 0 auto;
 	outline: 10px outset darkgreen;
 	/* outline-offset: 10px; */
 }
@@ -359,7 +365,7 @@ div {
 .bxshdw-3 {
 	box-shadow: inset 0px 0px 15px 0px darkblue;
 	max-width: 600px;
-	margin: 0 0 100px 0;
+	/* margin: 0 0 100px 0; */
 	padding: 10px;
 	border: 3px solid yellowgreen;
 	border-radius: 10px;
@@ -372,7 +378,7 @@ div {
 .opsty-st-2 {
 	color: red;
 	max-width: 600px;
-	margin: 0 0 100px 0;
+	/* margin: 0 0 100px 0; */
 	padding: 10px;
 	border: 3px solid darkslategray;
 	border-radius: 10px;
@@ -384,7 +390,7 @@ div {
 }
 
 .vsblty-style {
-	margin: 0 0 140px 0;
+	/* margin: 0 0 140px 0; */
 }
 
 .vsblty-st-1 {
