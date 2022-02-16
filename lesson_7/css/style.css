@@ -310,14 +310,3 @@ div {
 
 .button-f2 {
 }
-
-.example-pad {
-	width: 400px;
-	height: 200px;
-	border: 2px solid darkgreen;
-	padding: 20px;
-	color: dodgerblue;
-	background-color: #d4d9e996;
-	border-radius: 5px;
-	margin: 0 0 50px 150px;
-}
