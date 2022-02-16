@@ -1,4 +1,11 @@
 
+	универсальное значение background
+	
+	background: [background-color] [background-image] [background-position] / (здесь слэш) [background-size] [background-repeat] [background-attachment]; 
+	
+	background: red ur("../img/image.jpg") 0 0 / cover no-repeat;
+	
+	background: red ur("../img/image.jpg") 0 0 no-repeat;
 
 
 https://www.weblancer.net/
