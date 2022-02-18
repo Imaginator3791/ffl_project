@@ -63,11 +63,22 @@ div {
 
 .menu-link {
 	display: inline-block;
-	/* padding: 10px 30px; */
-	margin: 10px 30px;
+	padding: 10px;
+	margin: 0 20px 20px 0;
 	text-transform: uppercase;
-	color: darkred;
+	color: #fff;
+	max-width: 190px;
+	height: 70px;
+	background-color: darkgreen;
+	border: 3px solid goldenrod;
+	border-radius: 10px;
 	font-size: 24px;
+}
+
+.span-link {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .page-link {
@@ -122,6 +133,11 @@ div {
 	margin: 0 auto;
 }
 
+.menu-pages {
+	text-align: center;
+	padding: 50px 0;
+}
+
 .lesson7-style {
 	margin: 0 0 140px 0;
 }
@@ -132,11 +148,24 @@ div {
 	opacity: 0.2;
 	max-width: 900px;
 	min-height: 300px;
+	margin: 0 0 50px 0;
 }
 
-.menu-pages {
-	text-align: center;
-	padding: 50px 0;
+.bckgrnd-im-1 {
+	background: rgb(193, 34, 195);
+	background: linear-gradient(0deg, rgba(193, 34, 195, 1) 0%, rgba(45, 253, 104, 1) 78%);
+	/* background-image: url("../img/hr-statistics.jpg"); */
+	max-width: 900px;
+	min-height: 500px;
+	font-size: 40px;
+	/* color: transparent; */
+	margin: 0 0 50px 0;
+	padding: 20px;
+	background-clip: text;
+	/* background-clip: border-box; */
+	/* background-clip: padding-box; */
+	background-clip: content-box;
+	border: 20px dashed darkslategray;
 }
 
 /* ----- СТИЛИ МАКЕТА 1 ФИГМА ----- */
@@ -181,6 +210,7 @@ div {
 }
 
 .img-f {
+	max-width: 100%;
 	margin: 0 0 60px 0;
 }
 
@@ -263,7 +293,7 @@ div {
 .why-createx {
 	font-family: "Lato", sans-serif;
 	max-width: 390px;
-	margin: 0 auto 92px;
+	margin: 0 auto;
 }
 
 .title-f2 {
@@ -303,10 +333,22 @@ div {
 	font-weight: 400;
 	line-height: 1.6;
 	color: #424551;
-	/* margin: 0 0 4px 0; */
 	background: url("../img/vector-list.svg") 0 5px no-repeat;
 	padding: 0 0 0 32px;
 }
 
 .button-f2 {
+	margin: 48px 0 0 0;
+	width: 161px;
+	height: 44px;
+	background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+	border-radius: 4px;
+	/* text-align: center; */
+	color: #fff;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 3.14;
+	letter-spacing: 0.5px;
 }

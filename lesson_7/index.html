@@ -15,111 +15,170 @@
 		<div class="wrapper">
 			<header>
 				<div class="header">
-					<h1>Урок 7</h1>
+					<h1>Урок 7. BACKGROUND</h1>
 					Верхняя часть страницы. Шапка
 				</div>
-				<!-- <nav class="menu">
-				<a class="menu-link" href="#les6_1">border</a>
-				<a class="menu-link" href="#les6_2">border-radius</a>
-				<a class="menu-link" href="#les6_8">outline</a>
-				<a class="menu-link" href="#les6_9">box-shadow</a>
-				<a class="menu-link" href="#les6_10">opacity</a>
-				<a class="menu-link" href="#les6_11">visibility</a>
-				<a class="menu-link" href="#les6_4">макет Figma</a>
-			</nav> -->
+				<nav class="menu">
+					<a class="menu-link span-link" href="#les7_1">background-color</a>
+					<a class="menu-link span-link" href="#les7_2">background-image</a>
+					<a class="menu-link span-link" href="#les7_3">background-position</a>
+					<a class="menu-link span-link" href="#les7_4">background-size</a>
+					<a class="menu-link span-link" href="#les7_5">background-repeat</a>
+					<a class="menu-link span-link" href="#les7_6">background-attachment</a>
+					<a class="menu-link span-link" href="#les7_7">Figma Макет №1</a>
+					<a class="menu-link span-link" href="#les7_8">Figma Макет №2</a>
+				</nav>
 			</header>
 
 			<main class="content">
 				<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАТЕРИАЛ ПО УРОКУ -->
 				<div class="lesson7-style">
 
+
+					<!-- 
+
 					<div class="bckgrndimg-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum beatae iure
 						veritatis, ipsa aperiam ex cumque omnis fugiat unde molestias exercitationem suscipit quibusdam at minus
 						ad autem a. Ab, minima.</div>
 
-				</div>
+					<div class="bckgrnd-im-1">Свойство background-clip определяет, в каких областях будет находиться фоновая картинка и фоновый цвет блока.
+						Возможные значения:
+						border-box — фон занимает все области, в том числе под рамками (значение по умолчанию).
+						padding-box — фон занимает область контента и внутреннего отступа, но не заходит под рамку. Наглядно видно при прозрачных или прерывистых рамках.
+						content-box — фон заполняет только контентную область, но не заходит во внутренний отступ и под рамку.
+						text — фон заполняет текст в блоке, работает только если указано color: transparent.</div>
 
-				<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАКЕТ ФИГМА_1 -->
-				<div class="hr-statistics" id="les7_2">
 
-					<h2 class="title-f">HR statistics: job search, interviews, hiring and recruiting</h2>
+					BACKGROUND-COLOR
+
+					C с помощью свойства background-color можно задать цвет фона элемента.
+					Задать фоновый цвет можно любому элементу — строчному (inline), блочному (block) или строчно-блочному (inline-block).
+					Помимо цвета можно задать прозрачный фон при помощи ключевого слова transparent.
+					Это бывает полезно для изменения цвета при наведении курсора.
+
+					Важно! Если дизайнер в фигме использует цвет и свойство прозрачночти OPACITY, то лучше использовать параметр прозрачности через настройку RGBA,
+					поскольку если родителю задано свойство OPACITY, то и все дети вместе с ним будут становиться прозрачными.
+
+					В Фигме "пипетка" для выбора и определения цвета - клавиша "i".
 
 
-					<div class="date-time-f">
-						<span class="date-f">August 3, 2020</span>
-						<span class="time-f">4 min read</span>
+					BACKGROUND-IMAGE
+					Свойство background-image задаёт элементу фоновую картинку.
+					selector {
+					background-image: url("адрес-картинки");
+					}
+
+					Границы картинки и её расположение относительно краёв элемента мы задаём с помощью background-clip и background-origin.
+
+					Свойство background-clip определяет, в каких областях будет находиться фоновая картинка и фоновый цвет блока.
+					Возможные значения:
+					border-box — фон занимает все области, в том числе под рамками (значение по умолчанию).
+					padding-box — фон занимает область контента и внутреннего отступа, но не заходит под рамку. Наглядно видно при прозрачных или прерывистых рамках.
+					content-box — фон заполняет только контентную область, но не заходит во внутренний отступ и под рамку.
+					text — фон заполняет текст в блоке, работает только если указано color: transparent.
+
+
+					Свойство background-origin определяет какие области блока будет занимать фоновая картинка: все области, включая рамку, внутренний отступ и контент или только контент. Не влияет на background-color.
+
+					Доступные значения:
+					border-box — фоновая картинка заполняет все области блока: контентную, внутренний отступ и рамку.
+					padding-box — фоновая картинка заполняет область контента и внутреннего отступа, но не заходит под рамку (значение по умолчанию).
+					content-box — фоновая картинка заполняет только контентную область, но не заходит во внутренний отступ и под рамку.
+
+
+					ВАЖНО!!! Стоит понимать разницу между DIV с фоновой картинкой и, собственно, картинкой IMG. Картинке можно задать только один параметр размера: высоту или ширину, и браузер сам рассчитает второй. У блока с фоном, внутри которого нет контента, надо указывать оба параметра - width и height.
+					Так происходит потому, что по умолчанию DIV имеет ширину 100% и нулевую высоту, если у него нет содержимого. Поэтому фоновая картинка будет не видна.
+					ВАЖНО!!! Добавление фоновой картинки не устанавливает размер блока!!!!
+
+
+
+					С помощью background-image также можно сделать градиентный фон.
+					selector {
+					background-image: linear-gradient(red, yellow, green);
+					}
+
+					https://cssgradient.io/
+					Генератор градиентов
+
+
+
+					УНИВЕРСАЛЬНОЕ СВОЙСТВО
+					background: [background-color] [background-image] [background-position] / (здесь слэш) [background-size] [background-repeat] [background-attachment];
+					background: red ur("../img/image.jpg") 0 0 / cover no-repeat;
+					background: red ur("../img/image.jpg") 0 0 no-repeat;
+
+				</div> -->
+
+					<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАКЕТ ФИГМА_1 -->
+					<div class="hr-statistics" id="les7_7">
+						<h2 class="title-f">HR statistics: job search, interviews, hiring and recruiting</h2>
+						<div class="date-time-f">
+							<span class="date-f">August 3, 2020</span>
+							<span class="time-f">4 min read</span>
+						</div>
+						<img class="img-f" src="img/hr-statistics.jpg" alt="hr statistics" width="810">
+						<p class="subtitle-f">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui
+							odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est
+							hendrerit ac euismod. </p>
+						<div class="block-1-f">
+							<p class="text-1-f">At&nbsp;facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus
+								in&nbsp;et&nbsp;sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci,
+								consectetur
+								vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in&nbsp;massa.
+								Feugiat leo nam nisl lacinia amet, odio. Mi&nbsp;varius viverra risus vel.</p>
+							<p class="text-f-last">Amet, morbi sed pharetra, elit eget mi&nbsp;potenti. Condimentum orci interdum feugiat
+								lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan
+								et&nbsp;sed. Aliquet non sed duis diam vehicula rhoncus. In&nbsp;dictum nullam tincidunt semper
+								pellentesque purus morbi sed. Ut&nbsp;aliquet velit pharetra, nisi nunc, non.</p>
+						</div>
+						<div class="quote-f">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+							fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
+							tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.
+						</div>
+						<p class="text-f">Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus
+							blandit in neque amet non fringilla blandit:</p>
+						<ul class="list-f">
+							<li class="list-items-f">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+							<li class="list-items-f">Vulputate placerat amet pulvinar lorem nisl.</li>
+							<li class="list-items-f">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+							<li class="list-items-f-last">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+						</ul>
+						<p class="text-f-last">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in
+							ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas.
+							Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor
+							est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut
+							lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
 					</div>
 
-					<img class="img-f" src="img/hr-statistics.jpg" alt="hr statistics" width="810">
+					<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАКЕТ ФИГМА_2 -->
 
-					<p class="subtitle-f">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui
-						odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est
-						hendrerit ac euismod. </p>
-
-					<div class="block-1-f">
-						<p class="text-1-f">At&nbsp;facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus
-							in&nbsp;et&nbsp;sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci,
-							consectetur
-							vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in&nbsp;massa.
-							Feugiat leo nam nisl lacinia amet, odio. Mi&nbsp;varius viverra risus vel.</p>
-
-						<p class="text-f-last">Amet, morbi sed pharetra, elit eget mi&nbsp;potenti. Condimentum orci interdum feugiat
-							lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan
-							et&nbsp;sed. Aliquet non sed duis diam vehicula rhoncus. In&nbsp;dictum nullam tincidunt semper
-							pellentesque purus morbi sed. Ut&nbsp;aliquet velit pharetra, nisi nunc, non.</p>
+					<div class="why-createx" id="les7_8">
+						<p class="subtitle-f2">Who we are</p>
+						<h2 class="title-f2">Why Createx?</h2>
+						<ul class="list-f2">
+							<li class="list-items-f2">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+							<li class="list-items-f2">Vulputate placerat amet pulvinar lorem nisl.</li>
+							<li class="list-items-f2">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+							<li class="list-items-f2">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+							<li class="list-items-f2">Tincidunt sagittis neque sem ac eget.</li>
+							<li class="list-items-f2-last">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+						</ul>
+						<button class="button-f2">More about us</button>
 					</div>
 
+				</main>
 
-					<div class="quote-f">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
-						fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue
-						tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.
+
+
+				<footer class="footer">
+					<div>
+						<p class="footer-text">Это нижняя часть страницы. Подвал</p>
+						<p class="footer-text">К началу страницы <a class="page-link" href="#">(Наверх)</a></p>
+						<p class="footer-text">&#169; 2022. Михаил Уланов</p>
 					</div>
+				</footer>
+			</div>
+		</body>
 
-					<p class="text-f">Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus
-						blandit in neque amet non fringilla blandit:</p>
-
-					<ul class="list-f">
-						<li class="list-items-f">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-						<li class="list-items-f">Vulputate placerat amet pulvinar lorem nisl.</li>
-						<li class="list-items-f">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-						<li class="list-items-f-last">Etiam duis lobortis in fames ultrices commodo nibh.</li>
-					</ul>
-
-					<p class="text-f-last">Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in
-						ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas.
-						Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor
-						est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut
-						lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
-				</div>
-
-				<!-- ЗДЕСЬ НАЧИНАЕТСЯ МАКЕТ ФИГМА_2 -->
-
-				<div class="why-createx">
-					<p class="subtitle-f2">Who we are</p>
-					<h2 class="title-f2">Why Createx?</h2>
-					<ul class="list-f2">
-						<li class="list-items-f2">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
-						<li class="list-items-f2">Vulputate placerat amet pulvinar lorem nisl.</li>
-						<li class="list-items-f2">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
-						<li class="list-items-f2">Etiam duis lobortis in fames ultrices commodo nibh.</li>
-						<li class="list-items-f2">Tincidunt sagittis neque sem ac eget.</li>
-						<li class="list-items-f2-last">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
-					</ul>
-				</div>
-
-			</main>
-
-
-
-			<footer class="footer">
-				<div>
-					<p class="footer-text">Это нижняя часть страницы. Подвал</p>
-					<p class="footer-text">К началу страницы <a class="page-link" href="#">(Наверх)</a></p>
-					<p class="footer-text">&#169; 2022. Михаил Уланов</p>
-				</div>
-			</footer>
-		</div>
-	</body>
-
-</html>
+	</html>
